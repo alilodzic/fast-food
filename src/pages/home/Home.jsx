@@ -1,6 +1,10 @@
 import sidbar_about from "./../../utils/img/sidebar/sidebar-about.jpg"
 import banner from "./../../utils/img/sidebar/banner.jpg"
+import { Col, Row } from "react-bootstrap"
+import Postcategory from "../../component/post_category/Post_category"
+import {data} from './../../json/Data'
 const Home = () => {
+    console.log(data.Post_category)
     return (
         <>
             <div>
@@ -91,40 +95,11 @@ const Home = () => {
                 {/* Categories Section Begin */}
                 <section className="categories spad">
                     <div className="container">
-                        <div className="row">
-                            <div className="col-lg-3 col-md-6 col-sm-6">
-                                <div className="categories__item set-bg" data-setbg="img/categories/cat-1.jpg">
-                                    <div className="categories__hover__text">
-                                        <h5>Dinner</h5>
-                                        <p>28 articles</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6 col-sm-6">
-                                <div className="categories__item set-bg" data-setbg="img/categories/cat-2.jpg">
-                                    <div className="categories__hover__text">
-                                        <h5>Dinner</h5>
-                                        <p>28 articles</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6 col-sm-6">
-                                <div className="categories__item set-bg" data-setbg="img/categories/cat-3.jpg">
-                                    <div className="categories__hover__text">
-                                        <h5>Dinner</h5>
-                                        <p>28 articles</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6 col-sm-6">
-                                <div className="categories__item set-bg" data-setbg="img/categories/cat-4.jpg">
-                                    <div className="categories__hover__text">
-                                        <h5>Dinner</h5>
-                                        <p>28 articles</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <Row>
+
+                            {data.Post_category.map( el =>  <Postcategory key={el.id} Data={el} />  )  }
+
+                        </Row>
                     </div>
                     <div className="categories__post">
                         <div className="container">

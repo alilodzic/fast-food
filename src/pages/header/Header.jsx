@@ -2,7 +2,10 @@ import React from 'react'
 import {  Row } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import logo from "./../../utils/img/logo.png"
+import {data} from "../../json/Data"
 const Header = () => {
+
+
     return (
         <header className="header">
             <div className="header__top">

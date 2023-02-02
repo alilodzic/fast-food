@@ -51,7 +51,7 @@ const Conatct = () => {
               <textarea placeholder="Message" defaultValue={""} />
               <button type="submit" className="site-btn">Submit</button>
             </form>
-          </div>6
+          </div>
         </div>
       </div>
     </div>

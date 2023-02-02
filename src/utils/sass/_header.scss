@@ -116,6 +116,7 @@
                 position: relative;
                 padding: 10px 0;
                 display: block;
+                text-decoration: none;
                 
                 &:after {
                     position: absolute;
@@ -166,6 +167,7 @@
         height: 132px;
         position: relative;
         margin-bottom: 15px;
+        background-image: url(./../img/megamenu/p-1.jpg);
 
         .label {
             font-size: 12px;

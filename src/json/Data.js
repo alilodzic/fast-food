@@ -3,6 +3,7 @@ export const data = {
     {
       id: 1,
       category: ["Vegan", "DESSERTS"],
+      title : 'The Best Weeknight Baked Potatoes, 3 Creative Ways' ,
       description:
         "Vegan White Peach Mug Cobbler With CardamomVegan White Peach Mug Cobbler With Cardamom",
       secretIdentity: "Dan Jukes",
@@ -13,12 +14,79 @@ export const data = {
     {
       id: 2,
       category: ["Vegan", "DESSERTS"],
+      title : 'The Best Weeknight Baked Potatoes, 3 Creative Ways' ,
       description:
         "Vegan White Peach Mug Cobbler With CardamomVegan White Peach Mug Cobbler With Cardamom",
       secretIdentity: "Dan Jukes",
       date: "08/AUG",
       by: "admin",
       img: "https://www.tasteofhome.com/wp-content/uploads/2022/03/GettyImages-1178684940-scaled-e1647271049457.jpg",
+    },
+    {
+      id: 3,
+      category: ["Vegan", "DESSERTS"],
+      title : 'The Best Weeknight Baked Potatoes, 3 Creative Ways' ,
+      description:
+        "Vegan White Peach Mug Cobbler With CardamomVegan White Peach Mug Cobbler With Cardamom",
+      secretIdentity: "Dan Jukes",
+      date: "08/AUG",
+      by: "admin",
+      img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/easy-cheap-dinners-weeknight-1604466210.jpg?crop=0.502xw:1.00xh;0.498xw,0&resize=640:*",
+    },
+    {
+      id: 4,
+      category: ["DESSERTS"],
+      title : 'The Best Weeknight Baked Potatoes, 3 Creative Ways' ,
+      description:
+        "Vegan White Peach Mug Cobbler With CardamomVegan White Peach Mug Cobbler With Cardamom",
+      secretIdentity: "Dan Jukes",
+      date: "25/jan",
+      by: "admin",
+      img: "https://shelfcooking.com/wp-content/uploads/2019/08/dinner-ideas.png",
+    },
+    {
+      id: 5,
+      category: ["Vegan", "DESSERTS"],
+      title : 'The Best Weeknight Baked Potatoes, 3 Creative Ways' ,
+      description:
+        "Vegan White Peach Mug Cobbler With CardamomVegan White Peach Mug Cobbler With Cardamom",
+      secretIdentity: "Dan Jukes",
+      date: "08/AUG",
+      by: "admin",
+      img: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2016/4/26/0/HE_kwon-Ground-Turkey-Enchilada-Stir-Fry-with-Couscous_s4x3.jpg.rend.hgtvcom.616.462.suffix/1461695054811.jpeg",
+    },
+    {
+      id: 6,
+      category: ["DESSERTS"],
+      title : 'The Best Weeknight Baked Potatoes, 3 Creative Ways' ,
+      description:
+        "Vegan White Peach Mug Cobbler With CardamomVegan White Peach Mug Cobbler With Cardamom",
+      secretIdentity: "Dan Jukes",
+      date: "08/AUG",
+      by: "admin",
+      img: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pork-pineapple-and-onion-skewers-1643668721.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*",
+    },
+    {
+      id: 7,
+      category: ["Vegan", "DESSERTS"],
+      title : 'The Best Weeknight Baked Potatoes, 3 Creative Ways' ,
+      description:
+        "Vegan White Peach Mug Cobbler With CardamomVegan White Peach Mug Cobbler With Cardamom",
+      secretIdentity: "Dan Jukes",
+      date: "08/AUG",
+      by: "admin",
+      img: "https://www.foodandwine.com/thmb/_mzJP3uFAAlUltDgpFXAU_qqTlU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Burger-Combo-Prices-Across-US-FT-BLOG1022-2e1608e5a6714ee8b3c8301cf9780c7b.jpg",
+    },
+    {
+      id: 8,
+      category: ["DESSERTS"],
+      title : 'The Best Weeknight Baked Potatoes, 3 Creative Ways' ,
+      description:
+        "Vegan White Peach Mug Cobbler With CardamomVegan White Peach Mug Cobbler With Cardamom",
+      secretIdentity: "Dan Jukes",
+      date: "08/AUG",
+      by: "admin",
+      img: "https://www.foodandwine.com/thmb/_mzJP3uFAAlUltDgpFXAU_qqTlU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Burger-Combo-Prices-Across-US-FT-BLOG1022-2e1608e5a6714ee8b3c8301cf9780c7b.jpg*",
     },
   ],
   Post_category: [

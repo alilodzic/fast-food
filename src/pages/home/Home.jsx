@@ -1,11 +1,22 @@
 import sidbar_about from "./../../utils/img/sidebar/sidebar-about.jpg";
 import banner from "./../../utils/img/sidebar/banner.jpg";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import Postcategory from "../../component/post_category/Post_category";
 import { data } from "./../../json/Data";
 import Post from "../../component/post/Post";
+import Postmodeltwo from "../../component/post/Postmodeltwo";
+import { useState } from "react";
+
+
+const ipostPerRow = 4;
+
 const Home = () => {
   const length = data.posts.length;
+  const [next, setNext] = useState(ipostPerRow);
+  const handleMorePost = () => {
+      setNext(next + ipostPerRow);
+    };
+  
   return (
     <>
       <div>
@@ -42,16 +53,18 @@ const Home = () => {
         {/* Hero Section End */}
         {/* Categories Section Begin */}
         <section className="categories spad">
-          <div className="container">
+          <Container>
             <Row>
               {data.Post_category.map((el) => (
                 <Postcategory key={el.id} Data={el} />
               ))}
             </Row>
-          </div>
+          </Container>
+          
           <div className="categories__post">
             <Container>
               <Row>
+
                 <Col lg={8} md={8}>
                   <div className="categories__post__item categories__post__item--large">
                     <div
@@ -106,256 +119,22 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                  <Row>
-                    <Col lg={6} md={6} sm={6}>
-                      <div className="categories__post__item">
-                        <div
-                          className="categories__post__item__pic small__item set-bg"
-                          data-setbg="img/categories/categories-post/cp-2.jpg">
-                          <div className="post__meta">
-                            <h4>08hhhh</h4>
-                            <span>Aug</span>
-                          </div>
-                        </div>
-                        <div className="categories__post__item__text">
-                          <span className="post__label">Recipe</span>
-                          <h3>
-                            <a href="#">
-                              The Best Weeknight Baked Potatoes, 3 Creative Ways
-                            </a>
-                          </h3>
-                          <ul className="post__widget">
-                            <li>
-                              by <span>Admin</span>
-                            </li>
-                            <li>3 min read</li>
-                            <li>20 Comment</li>
-                          </ul>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt dolore magna
-                            aliqua. Quis ipsum suspendisse ultrices gravida...
-                          </p>
-                        </div>
-                      </div>
-                      <div className="categories__post__item">
-                        <div
-                          className="categories__post__item__pic set-bg"
-                          data-setbg="img/categories/categories-post/cp-4.jpg">
-                          <div className="post__meta">
-                            <h4>08</h4>
-                            <span>Aug</span>
-                          </div>
-                        </div>
-                        <div className="categories__post__item__text">
-                          <ul className="post__label--large">
-                            <li>Vegan</li>
-                            <li>Desserts</li>
-                          </ul>
-                          <h3>
-                            <a href="#">
-                              The Best Grass Stain Remover Is Already In Your
-                              Pantry
-                            </a>
-                          </h3>
-                          <ul className="post__widget">
-                            <li>
-                              by <span>Admin</span>
-                            </li>
-                            <li>3 min read</li>
-                            <li>20 Comment</li>
-                          </ul>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt dolore magna
-                            aliqua. Quis ipsum suspendisse ultrices gravida...
-                          </p>
-                        </div>
-                      </div>
-                      <div
-                        className="categories__post__item__plain set-bg"
-                        data-setbg="img/categories/categories-post/cp-6.jpg">
-                        <div className="categories__post__item__text">
-                          <div className="post__meta">
-                            <h4>08</h4>
-                            <span>Aug</span>
-                          </div>
-                          <ul className="post__label--large">
-                            <li>Vegan</li>
-                            <li>Desserts</li>
-                          </ul>
-                          <h3>
-                            <a href="#">
-                              This Summer Snacking Cake Is theSweetest Excuse
-                              to...
-                            </a>
-                          </h3>
-                          <div className="post__social">
-                            <span>Share</span>
-                            <a href="#">
-                              <i className="fa fa-facebook" /> <span>82</span>
-                            </a>
-                            <a href="#">
-                              <i className="fa fa-twitter" /> <span>24</span>
-                            </a>
-                            <a href="#">
-                              <i className="fa fa-envelope-o" /> <span>08</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="categories__post__item">
-                        <div
-                          className="categories__post__item__pic smaller__large set-bg"
-                          data-setbg="img/categories/categories-post/cp-8.jpg">
-                          <div className="post__meta">
-                            <h4>08</h4>
-                            <span>Aug</span>
-                          </div>
-                        </div>
-                        <div className="categories__post__item__text">
-                          <span className="post__label">Smoothie</span>
-                          <h3>
-                            <a href="#">
-                              This 2-Ingredient Spread Makes Any Egg Sandwich So
-                              Much Better
-                            </a>
-                          </h3>
-                          <ul className="post__widget">
-                            <li>
-                              by <span>Admin</span>
-                            </li>
-                            <li>3 min read</li>
-                            <li>20 Comment</li>
-                          </ul>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt dolore magna
-                            aliqua. Quis ipsum suspendisse ultrices gravida...
-                          </p>
-                        </div>
-                      </div>
-                    </Col>
 
-                    <Col lg={6} md={6} sm={6}>
-                      <div className="categories__post__item">
-                        <div
-                          className="categories__post__item__pic smaller__large set-bg"
-                          data-setbg="img/categories/categories-post/cp-3.jpg">
-                          <div className="post__meta">
-                            <h4>08</h4>
-                            <span>Aug</span>
-                          </div>
-                        </div>
-                        <div className="categories__post__item__text">
-                          <span className="post__label">Dinner</span>
-                          <h3>
-                            <a href="#">
-                              17 Perfect Gifts for Your Vegan Friend Because
-                              Sometimes...
-                            </a>
-                          </h3>
-                          <ul className="post__widget">
-                            <li>
-                              by <span>Admin</span>
-                            </li>
-                            <li>3 min read</li>
-                            <li>20 Comment</li>
-                          </ul>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt dolore magna
-                            aliqua. Quis ipsum suspendisse ultrices gravida...
-                          </p>
-                        </div>
-                      </div>
-                      <div className="categories__post__item__small">
-                        <img
-                          src="img/categories/categories-post/quote.png"
-                          alt=""
-                        />
-                        <p>
-                          Lorem ipsum dolor amet, consectetur adipiscing elit,
-                          sed do eiusmod tempor incididunt labore et dolore
-                          magna aliqua gravida.
-                        </p>
-                        <div className="posted__by">Elena T.Jaivy</div>
-                      </div>
-                      <div className="categories__post__item">
-                        <div
-                          className="categories__post__item__pic smaller__large set-bg"
-                          data-setbg="img/categories/categories-post/cp-5.jpg">
-                          <div className="post__meta">
-                            <h4>08</h4>
-                            <span>Aug</span>
-                          </div>
-                        </div>
-                        <div className="categories__post__item__text">
-                          <span className="post__label">Drinks</span>
-                          <h3>
-                            <a href="#">
-                              A 5-Minute Peach Mug Cobbler That Just So Happens
-                              to...
-                            </a>
-                          </h3>
-                          <ul className="post__widget">
-                            <li>
-                              by <span>Admin</span>
-                            </li>
-                            <li>3 min read</li>
-                            <li>20 Comment</li>
-                          </ul>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt dolore magna
-                            aliqua. Quis ipsum suspendisse ultrices gravida...
-                          </p>
-                        </div>
-                      </div>
-                      <div className="categories__post__item">
-                        <div
-                          className="categories__post__item__pic set-bg"
-                          data-setbg="img/categories/categories-post/cp-7.jpg">
-                          <div className="post__meta">
-                            <h4>08</h4>
-                            <span>Aug</span>
-                          </div>
-                        </div>
-                        <div className="categories__post__item__text">
-                          <ul className="post__label--large">
-                            <li>Vegan</li>
-                            <li>Desserts</li>
-                          </ul>
-                          <h3>
-                            <a href="#">
-                              Fresh Herb Polenta with Parsnip Chips and Maple
-                              Butter
-                            </a>
-                          </h3>
-                          <ul className="post__widget">
-                            <li>
-                              by <span>Admin</span>
-                            </li>
-                            <li>3 min read</li>
-                            <li>20 Comment</li>
-                          </ul>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt dolore magna
-                            aliqua. Quis ipsum suspendisse ultrices gravida...
-                          </p>
-                        </div>
-                      </div>
-                    </Col>
+                  <Row>
+                      {data.posts?.slice(0, next)?.map( el => <Postmodeltwo data={el} /> ) }
+
+                   {next < data.posts.length && (
                     <div className="col-lg-12 text-center">
-                      <div className="load__more__btn">
-                        <a href="#">Load more</a>
-                      </div>
+                    <div className="load__more__btn">
+                      <Button  variant="outline-dark" onClick={handleMorePost}>Load more</Button>
                     </div>
+                  </div>
+                   ) }
+                
                   </Row>
                 </Col>
 
-                <div className="col-lg-4 col-md-4">
+                <Col lg={4} md={4}>
                   <div className="sidebar__item">
                     <div className="sidebar__about__item">
                       <div className="sidebar__item__title">
@@ -548,7 +327,7 @@ const Home = () => {
                       </form>
                     </div>
                   </div>
-                </div>
+                </Col>
               </Row>
             </Container>
           </div>

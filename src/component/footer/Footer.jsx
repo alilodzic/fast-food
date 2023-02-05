@@ -1,5 +1,8 @@
 import logo from "./../../utils/img/logo.png"
 import avatar from "./../../utils/img/footer/instagram-avatar.jpg"
+
+
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -15,6 +18,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="row">
+
+
         <div className="col-lg-2 col-md-2 col-sm-4 col-6">
           <div className="footer__instagram__item set-bg" data-setbg="img/footer/ip-1.jpg"  />
         </div>

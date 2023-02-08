@@ -3,7 +3,7 @@ export const data = {
     {
       id: 1,
       category: ["Vegan", "DESSERTS"],
-      title : 'The Best Weeknight Baked Potatoes, 3 Creative Ways' ,
+      title: "The Best Weeknight Baked Potatoes, 3 Creative Ways",
       description:
         "Vegan White Peach Mug Cobbler With CardamomVegan White Peach Mug Cobbler With Cardamom",
       secretIdentity: "Dan Jukes",
@@ -14,7 +14,7 @@ export const data = {
     {
       id: 2,
       category: ["Vegan", "DESSERTS"],
-      title : 'The Best Weeknight Baked Potatoes, 3 Creative Ways' ,
+      title: "The Best Weeknight Baked Potatoes, 3 Creative Ways",
       description:
         "Vegan White Peach Mug Cobbler With CardamomVegan White Peach Mug Cobbler With Cardamom",
       secretIdentity: "Dan Jukes",
@@ -25,7 +25,7 @@ export const data = {
     {
       id: 3,
       category: ["Vegan", "DESSERTS"],
-      title : 'The Best Weeknight Baked Potatoes, 3 Creative Ways' ,
+      title: "The Best Weeknight Baked Potatoes, 3 Creative Ways",
       description:
         "Vegan White Peach Mug Cobbler With CardamomVegan White Peach Mug Cobbler With Cardamom",
       secretIdentity: "Dan Jukes",
@@ -36,7 +36,7 @@ export const data = {
     {
       id: 4,
       category: ["DESSERTS"],
-      title : 'The Best Weeknight Baked Potatoes, 3 Creative Ways' ,
+      title: "The Best Weeknight Baked Potatoes, 3 Creative Ways",
       description:
         "Vegan White Peach Mug Cobbler With CardamomVegan White Peach Mug Cobbler With Cardamom",
       secretIdentity: "Dan Jukes",
@@ -47,7 +47,7 @@ export const data = {
     {
       id: 5,
       category: ["Vegan", "DESSERTS"],
-      title : 'The Best Weeknight Baked Potatoes, 3 Creative Ways' ,
+      title: "The Best Weeknight Baked Potatoes, 3 Creative Ways",
       description:
         "Vegan White Peach Mug Cobbler With CardamomVegan White Peach Mug Cobbler With Cardamom",
       secretIdentity: "Dan Jukes",
@@ -58,7 +58,7 @@ export const data = {
     {
       id: 6,
       category: ["DESSERTS"],
-      title : 'The Best Weeknight Baked Potatoes, 3 Creative Ways' ,
+      title: "The Best Weeknight Baked Potatoes, 3 Creative Ways",
       description:
         "Vegan White Peach Mug Cobbler With CardamomVegan White Peach Mug Cobbler With Cardamom",
       secretIdentity: "Dan Jukes",
@@ -69,7 +69,7 @@ export const data = {
     {
       id: 7,
       category: ["Vegan", "DESSERTS"],
-      title : 'The Best Weeknight Baked Potatoes, 3 Creative Ways' ,
+      title: "The Best Weeknight Baked Potatoes, 3 Creative Ways",
       description:
         "Vegan White Peach Mug Cobbler With CardamomVegan White Peach Mug Cobbler With Cardamom",
       secretIdentity: "Dan Jukes",
@@ -80,7 +80,7 @@ export const data = {
     {
       id: 8,
       category: ["DESSERTS"],
-      title : 'The Best Weeknight Baked Potatoes, 3 Creative Ways' ,
+      title: "The Best Weeknight Baked Potatoes, 3 Creative Ways",
       description:
         "Vegan White Peach Mug Cobbler With CardamomVegan White Peach Mug Cobbler With Cardamom",
       secretIdentity: "Dan Jukes",

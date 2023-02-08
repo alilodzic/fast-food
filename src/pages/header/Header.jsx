@@ -1,19 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {  Row } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import logo from "./../../utils/img/logo.png"
 import {data} from "../../json/Data"
+import Nevbar from "./../../component/navbar/Nevbar"
 const Header = () => {
-
+    const [toggle, setToggle] = useState(false)
+const handOver = () => setToggle(!toggle)
 
     return (
+        <>
+        <Nevbar toggle={toggle} handOver={handOver} />
+
+      
         <header className="header">
             <div className="header__top">
                 <div className="container">
                     <Row>
                         <div className="col-lg-2 col-md-1 col-6 order-md-1 order-1">
                             <div className="header__humberger">
-                                <i className="fa fa-bars humberger__open" />
+                                <i className="fa fa-bars humberger__open" onClick={handOver} />
                             </div>
                         </div>
                         <div className="col-lg-8 col-md-10 order-md-2 order-3">
@@ -120,7 +126,7 @@ const Header = () => {
                 </div>
             </div>
         </header>
-
+        </>
     )
 }
 
